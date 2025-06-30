@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maior, Menor ou Iguais</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1 id="titulo-principal">Menor, Maior ou Iguais</h1>
+      <p>Atividade para a prática de JavaScript</p>
+    </header>
+
+    <div class="container-principal">
+        <div class="card-numero">
+            <label for="numero1-analise">Insira o 1º número:</label>
+            <input type="number" id="numero1-analise" name="numero" required>
+        </div>
+
+        <div class="card-numero">
+            <label for="numero2-analise">Insira o 2º número:</label>
+            <input type="number" id="numero2-analise" name="numero" required>
+        </div>
+
+        <div class="card-numero">
+            <label for="numero3-analise">Insira o 3º número:</label>
+            <input type="number" id="numero3-analise" name="numero" required>
+        </div>
+
+        <button type="submit" id="btn-analisar">Enviar</button>
+    </div>
+
+    <div><span id="resultado-analise"></span></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

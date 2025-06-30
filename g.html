@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Triângulo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo-principal">Verificação de Triângulo</h1>
+        <p>Atividade para a prática de JavaScript</p>
+    </header>
+
+    <div class="container-principal">
+        <div class="card-numero">
+            <label for="cateto1">Insira o tamanho do 1º cateto:</label>
+            <input type="number" id="cateto1" name="cateto1" required>
+        </div>
+
+        <div class="card-numero">
+            <label for="cateto2">Insira o tamanho do 2º cateto:</label>
+            <input type="number" id="cateto2" name="cateto2" required>
+        </div>
+
+        <div class="card-numero">
+            <label for="hipotenusa">Insira o tamanho da hipotenusa:</label>
+            <input type="number" id="hipotenusa" name="hipotenusa" required>
+        </div>
+
+        <button type="submit" id="btn-verificar-triangulo">Verificar</button>
+    </div>
+
+    <div><span id="resultado-triangulo"></span></div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
