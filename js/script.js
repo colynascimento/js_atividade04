@@ -169,51 +169,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const botaoCalcularRaizes = document.getElementById('btn-calcular-raizes');
     const resultadoRaizes = document.getElementById('resultado-raizes');
 
-    // botaoVerificar.addEventListener('click', () => {
-    //     const resultado = verificarParOuImpar(numeroRecebido.value);
-    //     resultadoVerificacao.textContent = resultado;
-    // });
+    botaoVerificar.addEventListener('click', () => {
+        const resultado = verificarParOuImpar(numeroRecebido.value);
+        resultadoVerificacao.textContent = resultado;
+    });
 
-    // botaoAnalisar.addEventListener('click', () => {
-    //     const numero1Recebido = parseInt(document.getElementById('numero1-analise').value);
-    //     const numero2Recebido = parseInt(document.getElementById('numero2-analise').value);
-    //     const numero3Recebido = parseInt(document.getElementById('numero3-analise').value);
+    botaoAnalisar.addEventListener('click', () => {
+        const numero1Recebido = parseInt(document.getElementById('numero1-analise').value);
+        const numero2Recebido = parseInt(document.getElementById('numero2-analise').value);
+        const numero3Recebido = parseInt(document.getElementById('numero3-analise').value);
 
-    //     const maiorNumero = analiseMaiorNumero(numero1Recebido, numero2Recebido, numero3Recebido);
-    //     const menorNumero = analiseMenorNumero(numero1Recebido, numero2Recebido, numero3Recebido);
-    //     if (maiorNumero !== menorNumero){
-    //         resultadoAnalise.textContent = maiorNumero + '\n' + menorNumero;
-    //     } else{
-    //         resultadoAnalise.textContent = 'Os números são iguais.'
-    //     };
-    // });
+        const maiorNumero = analiseMaiorNumero(numero1Recebido, numero2Recebido, numero3Recebido);
+        const menorNumero = analiseMenorNumero(numero1Recebido, numero2Recebido, numero3Recebido);
+        if (maiorNumero !== menorNumero){
+            resultadoAnalise.textContent = maiorNumero + '\n' + menorNumero;
+        } else{
+            resultadoAnalise.textContent = 'Os números são iguais.'
+        };
+    });
 
-    // botaoMonitorar.addEventListener('click', () => {
-    //     const velocidade = parseInt(velocidadeDetectada.value)
-    //     const velocidadeResultado = monitoramentoVelocidade(velocidade);
-    //     resultadoMonitoramento.textContent = velocidadeResultado;
-    // });
+    botaoMonitorar.addEventListener('click', () => {
+        const velocidade = parseInt(velocidadeDetectada.value)
+        const velocidadeResultado = monitoramentoVelocidade(velocidade);
+        resultadoMonitoramento.textContent = velocidadeResultado;
+    });
 
-    // botaoCalcular.addEventListener('click', () => {
-    //     const resultadoSalario = calcularAumento(salario.value);
-    //     resultadoCalculo.textContent = resultadoSalario;
-    // });
+    botaoCalcular.addEventListener('click', () => {
+        const resultadoSalario = calcularAumento(salario.value);
+        resultadoCalculo.textContent = resultadoSalario;
+    });
 
-    // botaoCalcularPreco.addEventListener('click', () => {
-    //     const resultadoPrecoPassagem =  calcularPassagem(distanciaRecebida.value);
-    //     resultadoCalculoPreco.textContent = resultadoPrecoPassagem;
-    // });
+    botaoCalcularPreco.addEventListener('click', () => {
+        const resultadoPrecoPassagem =  calcularPassagem(distanciaRecebida.value);
+        resultadoCalculoPreco.textContent = resultadoPrecoPassagem;
+    });
 
-    // botaoVerificarAno.addEventListener('click', () => {
-    //     const anoRecebido = document.getElementById('ano');
-    //     const resultadoAnoBissexto = detectarBissexto(anoRecebido.value);
-    //     resultadoBissexto.textContent = resultadoAnoBissexto;
-    // });
+    botaoVerificarAno.addEventListener('click', () => {
+        const anoRecebido = document.getElementById('ano');
+        const resultadoAnoBissexto = detectarBissexto(anoRecebido.value);
+        resultadoBissexto.textContent = resultadoAnoBissexto;
+    });
 
-    // botaoVerificarTriangulo.addEventListener('click', () => {
-    //     const resultadoDoTriangulo = verificarTriangulo(cateto1.value, cateto2.value, hipotenusa.value);
-    //     resultadoTriangulo.textContent = resultadoDoTriangulo;
-    // });
+    botaoVerificarTriangulo.addEventListener('click', () => {
+        const resultadoDoTriangulo = verificarTriangulo(cateto1.value, cateto2.value, hipotenusa.value);
+        resultadoTriangulo.textContent = resultadoDoTriangulo;
+    });
 
     botaoCalcularRaizes.addEventListener('click', () => {
         const resultadoRaiz = calcularRaizQuadratica();
